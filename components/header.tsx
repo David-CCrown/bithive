@@ -14,7 +14,7 @@ const Header =  async () => {
         <header className="flex items-center justify-between py-6 px-4 lg:px-12">
             <div className="flex items-center gap-4">
                <div className="lg:hidden"> <NavMobile /></div>
-                <Logo variant="dark" size={100} />
+                <Logo  size={100} />
             </div>
             <NavLinks />
             <Suspense>
