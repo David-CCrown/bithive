@@ -1,6 +1,7 @@
+import { Quest } from "@/@types/interface";
 import QuestPreviewCard from "./quest-preview-card";
 
-const quests = [
+const quests: Quest[] = [
   {
     title: "Emergency Clean-Up: Government House",
     rank: "B+ Required",

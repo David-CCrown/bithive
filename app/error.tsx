@@ -15,8 +15,17 @@ const ErrorPage = ({ statusCode }: { statusCode?: number }) => {
         </div>
     );
 };
+ 
+interface InitialPropsI {
+    res: {
+        statusCode?: number;
+    },
+    err: {
+        statusCode?: number;
+    };
+}
 
-ErrorPage.getInitialProps = ({ res, err }: { res?: any; err?: any }) => {
+ErrorPage.getInitialProps = ({ res, err }: InitialPropsI) => {
     const statusCode = res?.statusCode || err?.statusCode || 404;
     return { statusCode };
 };

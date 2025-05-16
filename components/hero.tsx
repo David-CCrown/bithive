@@ -1,6 +1,6 @@
 import { title } from "@/lib/primitives";
 import { Button } from "./ui/button";
-import HeroLottieAnimation from "./hero-lottie-animation";
+// import HeroLottieAnimation from "./hero-lottie-animation";
 import CivicAuthTag from "./civic-auth-tag";
 
 const Hero = () => {

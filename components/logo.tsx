@@ -3,11 +3,11 @@ import Image from 'next/image'; // If using Next.js; otherwise use <img>
 import Link from 'next/link';
 
 type LogoProps = {
-  variant?: 'light' | 'dark';
+  // variant?: 'light' | 'dark';
   size?: number;
 };
 
-const Logo: React.FC<LogoProps> = ({ variant = 'dark', size = 40 }) => {
+const Logo: React.FC<LogoProps> = ({  size = 40 }) => {
   const logoPath = `/logo/bithive-logo.png`; // use .svg if available and preferred
 
   return (

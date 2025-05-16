@@ -1,6 +1,9 @@
+import { Quest } from "@/@types/interface";
 import { Card, CardContent } from "./ui/card";
 
-const QuestPreviewCard = ({ quest }) => { 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const QuestPreviewCard: React.FC<{quest: Quest}> = ({ quest }) => { 
+    
     return (
         <Card className="flex flex-col bg-gray-400 shadow-md p-4 h-[65vh]">
             <CardContent></CardContent>

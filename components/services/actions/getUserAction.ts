@@ -5,7 +5,7 @@ const getUserAction = async () => {
         const user = await getUser();
         return user;
     } catch (err) {
-       
+       console.error("Error fetching user:", err);
         return null;
    }
 }
