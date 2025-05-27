@@ -16,8 +16,8 @@ const Header =  async () => {
                <div className="lg:hidden"> <NavMobile /></div>
                 <Logo  size={100} />
             </div>
-            <NavLinks />
-            <Suspense>
+           <div className="hidden lg:block"> <NavLinks /></div>
+            <Suspense fallback={<div className="flex items-center gap-8"><Notification /></div>}>
                     <div className="flex items-center gap-8">
                         <Notification />
                         {

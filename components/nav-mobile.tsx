@@ -14,7 +14,7 @@ const NavMobile = ()=> {
                 </SheetTrigger>
                 <SheetTitle content="navbar" />
                 <SheetContent  className=" h-[96%] rounded-2xl self-center   mx-3">
-                    <div className="w-full  p-4">
+                    <div className="w-full grid grid-cols-1  p-4">
                          <NavLinks isMobile/>
                     </div>
                 </SheetContent>

@@ -1,7 +1,7 @@
 import { authMiddleware } from "@civic/auth-web3/nextjs/middleware"
 
 export default authMiddleware({
-  exclude: ["/job-board", "/guilds", "/quest"]
+  exclude: ["/job-board", "/guilds", "/quests", "/wallet"]
 });
 
 export const config = {

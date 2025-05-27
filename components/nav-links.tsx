@@ -1,6 +1,5 @@
 import { navLinks } from "@/lib/config";
 import NextLink from "next/link";
-import { NavigationMenu, NavigationMenuLink } from "./ui/navigation-menu";
 import { cn } from "@/lib/utils";
 
 interface NavLinksProps {
@@ -9,21 +8,19 @@ interface NavLinksProps {
 
 const NavLinks:React.FC<NavLinksProps> = ({isMobile=false}) => {
     return (
-        <NavigationMenu className={cn({"hidden lg:flex flex-row gap-6": !isMobile, "w-[100%] block  gap-2": isMobile})}>
-            {
+        <div className={cn("flex items-center", {"flex-col mt-8": isMobile}, {"flex-row": !isMobile})}>
+              {
                 navLinks.map((link) => (
-                    <NavigationMenuLink className={cn("py-1", {"w-full !rounded-lg": isMobile})}  asChild key={link.name}>
-                        <NextLink
-                            key={link.name}
-                            href={link.path}
-                            className={cn("font-[700] text-[16px] text-foreground transition-colors duration-300", {"w-full": isMobile})}
-                    >
-                        {link.name}
-                    </NextLink>
-                    </NavigationMenuLink>
+                    <NextLink
+                    key={link.name}
+                    href={link.path}
+                    className={cn("select-none font-[700] text-[16px] text-foreground transition-colors duration-300 hover:bg-muted active:bg-none rounded-lg", {"w-full": isMobile, }, "py-2 px-4", {"w-full": isMobile})}
+            >
+                {link.name}
+          </NextLink>
                 ))
             }
-        </NavigationMenu>
+        </div>
     )
 }
 

@@ -19,7 +19,7 @@ const Hero = () => {
                         Learn More
                     </Button>
                 </div>
-                <CivicAuthTag  />
+                {/* <CivicAuthTag  /> */}
              </div>
            {/* <HeroLottieAnimation /> */}
         </div>
